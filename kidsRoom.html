@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./kidsRoom.css">
+  <title>小童遊樂館</title>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <a href="#" class="logo">小童遊樂館</a>
+      <input type="checkbox" id="navbar-toggle" class="navbar-toggle-input">
+      <div class="nav-wrap">
+        <ul class="nav">
+          <li class="nav-list"><a href="#top" class="nav-link">近期活動</a></li>
+          <li class="nav-list"><a href="#middle" class="nav-link">來看好物</a></li>
+          <li class="nav-list"><a href="#bottom" class="nav-link">捐贈小物</a></li>
+        </ul>
+      </div>
+      <label for="navbar-toggle" class="navbar-toggle-label">
+        <span class="hamburger"></span>
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <!-- 近期活動 -->
+    <section id="top" class="top">
+      <div class="container">
+        <div class="main-banner">
+          <img src="./img/banner-1.jpg" alt="" class="main-banner-img">
+          <div class="main-banner-content">
+            <p class="main-banner-title">假日時光</p>
+            <p class="main-banner-descript">Holiday time</p>
+            <a href="#" class="action">我要參加</a>
+          </div>
+        </div>
+        <div class="banner-bottom">
+          <div class="sec-banner">
+            <img src="./img/banner-2.jpg" alt="" class="sec-banner-img">
+            <div class="sec-banner-content">
+              <p class="sec-banner-title">小童二手物</p>
+              <a href="#" class="action">換物區</a>
+            </div>
+          </div>
+          <div class="sec-banner">
+            <img src="./img/banner-3.jpeg" alt="" class="sec-banner-img">
+            <div class="sec-banner-content">
+              <p class="sec-banner-title">小童二手物</p>
+              <a href="#" class="action">購買區</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- 來看好物 -->
+    <section id="middle" class="middle">
+      <div class="container">
+        <div class="card-wrap">
+
+          <!-- <div class="card">
+            <img src="./img/main-1.jpeg" alt="" class="card-img">
+            <div class="card-content">
+              <p class="card-type">換物區</p>
+              <p class="card-name">安撫娃娃</p>
+              <a href="javascript:void(0)" class="action card-btn" data-toggle="modal" data-target="#card-descript" data-id="">深入了解</a>
+            </div>
+          </div> -->
+
+        </div>
+        <div class="model-wrapper" hidden>
+          <div class="model">
+            <a class="model-text model-delete">X</a>
+            <div class="model-text model-id"></div>
+            <p class="model-text model-type"></p>
+            <p class="model-text model-name"></p>
+            <div class="model-text model-condition"></div>
+            <div class="model-text model-description"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 捐贈小物 -->
+    <section id="bottom" class="bottom">
+      <div class="container">
+        <div class="contribute-wrap">
+          <img src="./img/bottom.jpg" alt="" class="contribute-img">
+          <div class="contribute-content">
+            <p class="contribute-title">捐贈小物</p>
+            <p class="contribute-descript">將物品捐送至各大孤兒院，留給更需要幫助的人。</p>
+            <a href="#" class="action contribute-btn">捐贈去</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="fotter">
+      <p class="fotter-content">小童遊樂館 &copy; 2022 | Design by Wu Pei-Shan shiny</p>
+    </div>
+  </footer>
+
+  <script src="./kidsRoom.js"></script>
+</body>
+
+</html>
