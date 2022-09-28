@@ -147,10 +147,12 @@ html {
   --main-color: #11ab9e;
   --sec-color: #ff566c;
   --white: #fff;
-  --logo-font-size: 24px;
-  --main-font-size: 30px;
-  --sec-font-size: 18px;
-  --descript-font-size: 14px;
+  --s-main-font-size: 26px;
+  --s-sec-font-size: 20px;
+  --s-descript-font-size: 16px;
+  --main-font-size: 32px;
+  --sec-font-size: 24px;
+  --descript-font-size: 20px;
   --box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -158,8 +160,8 @@ html {
   color: white;
   background: var(--main-color);
   border-radius: 0.5rem;
-  font-size: var(--sec-font-size);
-  padding: 0.5rem 1rem;
+  font-size: var(--s-sec-font-size);
+  padding: 0.3rem 0.6rem;
   transition: all 0.1s linear;
   cursor: pointer;
 }
@@ -277,13 +279,13 @@ html {
   left: 30px;
 }
 .top .container .main-banner .main-banner-content .main-banner-title {
-  font-size: 40px;
+  font-size: var(--s-main-font-size);
   font-weight: 700;
   color: var(--main-color);
   margin-bottom: 1rem;
 }
 .top .container .main-banner .main-banner-content .main-banner-descript {
-  font-size: var(--main-font-size);
+  font-size: var(--s-sec-font-size);
   color: var(--white);
   letter-spacing: 0.25rem;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -308,7 +310,7 @@ html {
   left: 30px;
 }
 .top .container .banner-bottom .sec-banner .sec-banner-content .sec-banner-title {
-  font-size: var(--main-font-size);
+  font-size: var(--s-sec-font-size);
   font-weight: 700;
   color: var(--white);
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
@@ -439,21 +441,30 @@ html {
   margin-bottom: 1.5rem;
 }
 
-.fotter {
+.footer {
   width: 100%;
   height: 40px;
   background-color: var(--main-color);
   margin-top: 2rem;
 }
-.fotter .fotter-content {
+.footer .footer-content {
   font-family: 微軟正黑體;
-  font-size: var(--sec-font-size);
+  font-size: var(--s-descript-font-size);
   color: var(--white);
   text-align: center;
   line-height: 40px;
 }
 
 @media screen and (min-width: 768px) {
+  .action {
+    color: white;
+    background: var(--main-color);
+    border-radius: 0.5rem;
+    font-size: var(--sec-font-size);
+    padding: 0.5rem 1rem;
+    transition: all 0.1s linear;
+    cursor: pointer;
+  }
   .navbar-toggle-label {
     display: none;
   }
@@ -493,6 +504,12 @@ html {
     width: 67%;
     padding-left: 0;
   }
+  .top .container .main-banner .main-banner-content .main-banner-title {
+    font-size: 40pt;
+  }
+  .top .container .main-banner .main-banner-content .main-banner-descript {
+    font-size: var(--main-font-size);
+  }
   .top .container .main-banner .main-banner-img {
     width: 100%;
   }
@@ -503,6 +520,9 @@ html {
   }
   .top .container .banner-bottom .sec-banner {
     width: 100%;
+  }
+  .top .container .banner-bottom .sec-banner .sec-banner-content .sec-banner-title {
+    font-size: var(--main-font-size);
   }
   .top .container .banner-bottom .sec-banner .sec-banner-img {
     width: 100%;
@@ -529,5 +549,9 @@ html {
     width: 40%;
     padding-left: 1.5rem;
     align-self: center;
+  }
+  .footer .footer-content {
+    font-family: 微軟正黑體;
+    font-size: var(--descript-font-size);
   }
 }/*# sourceMappingURL=kidsRoom.css.map */
